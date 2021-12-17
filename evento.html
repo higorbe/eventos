@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplos de Eventos</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="evento.js"></script>
+	<link rel="stylesheet" type="text/css" href="evento.css">
+</head>
+<body onload="carreguei()" onresize="redimensionei()">
+	<img src="fatecjd.jpg" id="imagem" width="150"
+	 onclick="umClique()" ondblclick="doisCliques()">
+	<form>
+		<label for="nome">Nome: </label>
+		<input type="text" name="nome" id="nome"
+				onfocus="entreiNoCampo()"
+				onblur="saiDoCampo()"
+				onchange="mudei()" 
+				onselect="selecionei()"
+				onkeydown="teclaBaixo()" 
+				onkeyup="teclaCima()" 
+		>
+	</form>
+	<div id="cores"
+			onmouseover="sobre()" 
+			onmouseout="saindo()" 
+			onmousedown="paraBaixo()"
+			onmouseup="paraCima()" 
+			onmousemove="movendo()" 
+	>
+		<h2>Log de ocorrências:</h2>
+	</div>
+	<div id="log">Aula de JS</div>
+</body>
+</html>
